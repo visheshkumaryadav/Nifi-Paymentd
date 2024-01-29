@@ -1,0 +1,29 @@
+.example-spacer {
+    flex:1 1 auto;
+  }
+  button{
+    padding: 20px 30px;
+    @media (max-width: 900px) {
+      width: 30%;
+      margin-left: 41%;
+    }
+  }
+  span{
+    margin-left: 4%;
+    cursor: pointer;
+    font-size: medium;
+    padding: 5%;
+    @media (max-width: 800px) {
+        display: none;
+      }
+  }
+  .valign-center{
+    display: inline-flex;
+    text-align: center;
+    margin-top: 3%;  
+  }
+  marquee{
+    margin-top: 20px;
+    color: blue;
+    font-size: larger;
+  }

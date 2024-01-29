@@ -1,0 +1,56 @@
+<mat-toolbar color="default">
+    <img routerLink="" src="assets/img/nifi1.png" height="50" alt="" class="l" />
+    <span class="example-spacer">
+        <span class="valign-center" mat-button [matMenuTriggerFor]="animals"><span>Products</span> <i
+                class="material-icons" style="margin-top: 9%;">arrow_drop_down</i></span>
+        <mat-menu #animals="matMenu">
+            <span style="width: 150px; " mat-menu-item [matMenuTriggerFor]="accounts">Accounts</span>
+            <span mat-menu-item [matMenuTriggerFor]="payouts">Payouts</span>
+            <span mat-menu-item [matMenuTriggerFor]="collections ">Collections</span>
+            <span mat-menu-item [matMenuTriggerFor]="cards">Cards</span>
+            <span mat-menu-item [matMenuTriggerFor]="loans">Loans</span>
+            <span mat-menu-item [matMenuTriggerFor]="marketplace ">Marketplace </span>
+        </mat-menu>
+        <mat-menu #accounts="matMenu">
+            <span style="width: 200px;" routerLink="/account/currentaccount" mat-menu-item>Current Account</span>
+            <span mat-menu-item routerLink="/account/salarycard">Salary Card</span>
+        </mat-menu>
+        <mat-menu #payouts="matMenu">
+            <span style="width: 200px;" mat-menu-item routerLink="/payout/simplepayout">Simple Payout</span>
+            <span mat-menu-item >Bulk Payouts</span>
+            <span mat-menu-item routerLink="/payout/payoutlink">Payouts Links</span>
+        </mat-menu>
+        <mat-menu #collections="matMenu">
+            <span style="width: 200px;" routerLink="/collection/collectionlink" mat-menu-item>Collection Links</span>
+            <span mat-menu-item routerLink="/collection/collectionqr">Collection QR</span>
+            <span mat-menu-item routerLink="/collection/pos">POS</span>
+
+        </mat-menu>
+        <mat-menu #cards="matMenu">
+            <span style="width: 200px;" routerLink="/card/expensecard" mat-menu-item>Expense Card</span>
+            <span mat-menu-item routerLink="/card/giftcard">Gift Card</span>
+            <span mat-menu-item routerLink="/card/brandvouchers">Brand Vouchers</span>
+        </mat-menu>
+        <mat-menu #loans="matMenu">
+            <span style="width: 200px;" routerLink="/loan/workingcapital" mat-menu-item>Working Capital</span>
+            <span mat-menu-item routerLink="/loan/termloan">Term Loan</span>
+            <span mat-menu-item routerLink="/loan/overdraft">Overdraft</span>
+        </mat-menu>
+        <mat-menu #marketplace="matMenu">
+            <span style="width: 200px;" routerLink="/marketplace/utilitypayment" mat-menu-item>Utility Payments</span>
+        </mat-menu>
+
+        <span routerLink="#">Devloper API</span>
+        <span routerLink="/pricing">Pricing</span>
+        <span class="valign-center" mat-button [matMenuTriggerFor]="animal"><span>Company</span>
+    </span>
+<mat-menu #animal="matMenu">
+    <span style="width: 150px; " mat-menu-item routerLink="/about">About Us</span>
+    <span mat-menu-item routerLink="/blog">Our Blog</span>
+    <span mat-menu-item routerLink="/career">Careers</span>
+    <span mat-menu-item routerLink="/contact">Contact Us</span>
+</mat-menu>
+    </span>
+    <button mat-raised-button color="accent" routerLink="/signup">Get Started</button>
+</mat-toolbar>
+<marquee behavior="right" direction=""><h2>All services are under maintenance. Thank you for visit this website.</h2></marquee>

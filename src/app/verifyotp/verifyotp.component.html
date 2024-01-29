@@ -1,0 +1,125 @@
+<!-- <div class="container-fluid ps-md-0">
+    <img class="limg" src="https://t4.ftcdn.net/jpg/04/60/71/01/240_F_460710131_YkD6NsivdyYsHupNvO3Y8MPEwxTAhORh.jpg"
+        alt="">
+    <div class="row g-0">
+        <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
+        <div class="col-md-8 col-lg-6">
+            <div class="login d-flex align-items-center py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-9 col-lg-8 mx-auto">
+                            <h5 class="login-heading mb-4">Welcome to Neo Infra Fintech Inclusion Pvt Ltd.</h5>
+                            <p>Securely login your account!!.......</p>
+                            <p>Enter 6-Digit Otp..............</p>
+                            Sign In Form
+                            <form [formGroup]="otpForm" (ngSubmit)="verifyOTP()">
+                                <div class="otp-input">
+                                    <input type="text" class="form-control" formControlName="digit1"
+                                        (input)="focusNextInput($event, digit2)" maxlength="1">
+                                    <input type="text" class="form-control" formControlName="digit2"
+                                        (input)="focusNextInput($event, digit3)" maxlength="1">
+                                    <input type="text" class="form-control" formControlName="digit3"
+                                        (input)="focusNextInput($event, digit4)" maxlength="1">
+                                    <input type="text" class="form-control" formControlName="digit4"
+                                        (input)="focusNextInput($event, digit5)" maxlength="1">
+                                    <input type="text" class="form-control" formControlName="digit5"
+                                        (input)="focusNextInput($event, digit6)" maxlength="1">
+                                    <input type="text" class="form-control" formControlName="digit6"
+                                        (input)="focusNextInput($event, digit7)" maxlength="1">
+                                </div>
+                                <br>
+                                <button type="submit" class="btn btn-primary">Verify</button>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- <div class="container-fluid ps-md-0">
+    <img class="limg"
+        src="https://t4.ftcdn.net/jpg/04/60/71/01/240_F_460710131_YkD6NsivdyYsHupNvO3Y8MPEwxTAhORh.jpg" alt="">
+    <div class="row g-0">
+        <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
+        <div class="col-md-8 col-lg-6">
+            <div class="login d-flex align-items-center py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-9 col-lg-8 mx-auto">
+                            <h5 class="login-heading mb-4">Welcome to Neo Infra Fintech Inclusion Pvt Ltd.</h5>
+                            <p>Securely login to your account!!.......</p>
+                            <p>Enter 6-Digit Otp..............</p>
+                           
+                            <form [formGroup]="otpForm" (ngSubmit)="verifyOTP()">
+                                <div class="otp-input">
+                                    <input type="text" class="form-control" formControlName="digit1"
+                                        (input)="enableNextField($event, 'digit2')" maxlength="1">
+                                    <input type="text" class="form-control" formControlName="digit2"
+                                        (input)="enableNextField($event, 'digit3')" maxlength="1" [disabled]="!otpForm.get('digit1')?.value">
+                                    <input type="text" class="form-control" formControlName="digit3"
+                                        (input)="enableNextField($event, 'digit4')" maxlength="1" [disabled]="!otpForm.get('digit2')?.value">
+                                    <input type="text" class="form-control" formControlName="digit4"
+                                        (input)="enableNextField($event, 'digit5')" maxlength="1" [disabled]="!otpForm.get('digit3')?.value">
+                                    <input type="text" class="form-control" formControlName="digit5"
+                                        (input)="enableNextField($event, 'digit6')" maxlength="1" [disabled]="!otpForm.get('digit4')?.value">
+                                    <input type="text" class="form-control" formControlName="digit6"
+                                        (input)="enableNextField($event, 'digit7')" maxlength="1" [disabled]="!otpForm.get('digit5')?.value">
+                                </div>
+                                <br>
+                                <button type="submit" class="btn btn-primary">Verify</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+<div class="container-fluid ps-md-0">
+    <img class="limg" src="https://t4.ftcdn.net/jpg/04/60/71/01/240_F_460710131_YkD6NsivdyYsHupNvO3Y8MPEwxTAhORh.jpg"
+        alt="">
+    <div class="row g-0">
+        <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
+        <div class="col-md-8 col-lg-6">
+            <div class="login d-flex align-items-center py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-9 col-lg-8 mx-auto">
+                            <h5 class="login-heading mb-4">Welcome to Neo Infra Fintech Inclusion Pvt Ltd.</h5>
+                            <p>Securely login to your account!!.......</p>
+                            <p>Enter 6-Digit Otp..............</p>
+                            <!-- Sign In Form -->
+                            <form [formGroup]="otpForm" (ngSubmit)="verifyOTP()">
+                                <div class="otp-input">
+                                    <input type="text" class="form-control" formControlName="digit1"
+                                        (input)="enableNextField($event, 'digit2')" maxlength="1" #digit1Input>
+                                    <input type="text" class="form-control" formControlName="digit2"
+                                        (input)="enableNextField($event, 'digit3')" maxlength="1"
+                                        [disabled]="!otpForm.get('digit1')?.value" #digit2Input>
+                                    <input type="text" class="form-control" formControlName="digit3"
+                                        (input)="enableNextField($event, 'digit4')" maxlength="1"
+                                        [disabled]="!otpForm.get('digit2')?.value" #digit3Input>
+                                    <input type="text" class="form-control" formControlName="digit4"
+                                        (input)="enableNextField($event, 'digit5')" maxlength="1"
+                                        [disabled]="!otpForm.get('digit3')?.value" #digit4Input>
+                                    <input type="text" class="form-control" formControlName="digit5"
+                                        (input)="enableNextField($event, 'digit6')" maxlength="1"
+                                        [disabled]="!otpForm.get('digit4')?.value" #digit5Input>
+                                    <input type="text" class="form-control" formControlName="digit6"
+                                        (input)="enableNextField($event, 'digit7')" maxlength="1"
+                                        [disabled]="!otpForm.get('digit5')?.value" #digit6Input>
+                                </div>
+                                <br>
+                                <button type="submit" class="btn btn-primary">Verify</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

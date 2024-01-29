@@ -1,0 +1,8 @@
+.card-wapper{
+    display: flex;
+}
+.card{
+    margin-left: 3%;
+    padding: 2% 2%;
+    border-radius: 7%;
+}

@@ -1,0 +1,45 @@
+img{
+    width: 60%;
+    height: 60%;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 4%;
+    margin-left: 20%;
+}
+.btn{
+    margin-left: 43%;
+    padding: 1.40% 4%;
+}
+.DD{
+    display:flex;
+    margin-left: 13%;
+    margin-right: 8%; 
+}
+
+.card{
+    border-radius: 7%;
+    text-align: center;
+    margin-bottom: 7%;
+    margin-left: 3%;
+    width: 21%;
+    background-color: rgb(226, 230, 228);
+    /* @media (max-width: 100px) {
+        width: 100%;
+      } */
+}
+.i{
+    width: 80%;
+     height: 90%;
+     margin-bottom: -5%;
+     margin-left: -1%; 
+}
+
+.RR{
+    background-color: rgb(220, 112, 112); 
+}
+.im{
+    margin-right: 13%;
+}
+mat-card{
+    padding: 2% 2%;
+}

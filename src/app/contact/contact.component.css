@@ -1,0 +1,99 @@
+
+.card{
+    padding: 10px 2px;
+    border-radius: 20px;
+    @media (max-width: 800px) {
+        width: 100%;
+
+      }
+}
+.AA{
+    margin-top: 100px;
+    text-align: center;
+}
+img{
+    width: 50px;
+    height: 50px;
+    margin-left: 43%;
+    @media (max-width: 800px) {
+        width: 100%;
+      }
+
+}
+.im{
+    @media (max-width: 800px) {
+        width: 35%;
+      }  
+}
+textarea{
+    width: 100%;
+    @media (max-width: 800px) {
+        width: 100%;
+        margin-left: -4px;
+      } 
+}
+.bt{
+    margin-left: 34px;
+    @media (max-width: 800px) {
+        width: 100%;
+        margin-left: -4px;
+      } 
+}
+
+mat-card{
+    margin-top: 40%;
+    margin-bottom: 40%;
+    padding: 60px 60px;
+    @media (max-width: 900px) {
+        width: 100%;
+      }
+}
+.row{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+h1,h6,a{
+    text-align: center;
+}
+.B{
+    background-color: cornflowerblue;
+    height: 350px;
+    padding: 5%;
+}
+/* .C{
+    background-color: beige;
+    margin-bottom: 7%;
+    height: 350px;
+    padding: 5%;
+} */
+.D{
+    margin-bottom: 3%;
+    
+}
+.i{
+    width: auto;
+    height: 600px;
+    position: absolute;
+  }
+  iframe{
+    @media (max-width: 900px) {
+        width: 100%;
+      }
+  }
+ 
+  .l{
+    width: 13%; 
+    margin-left: -0%;
+    @media (max-width: 800px) {
+      width: 30%;
+    } 
+  }
+  .cc-contact-information{
+    @media (max-width: 800px) {
+      width: 100%;
+    } 
+  }
+  
+  h2,h3,h5,h6{
+    font-size: large;
+  }

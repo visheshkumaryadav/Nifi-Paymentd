@@ -1,0 +1,39 @@
+.container{
+    padding: 30px 30px;
+    color: white;
+    
+}
+.CC{
+    margin-top: 50px;
+  width: 0%;
+  display: flex;
+  column-gap: 0.5ch;
+  position: absolute;
+  @media (max-width: 900px) {
+    margin-left: -8%;
+    height: 3%;
+  }
+
+}
+.ff{
+  text-align: end; 
+}
+.AA{
+    width: 60px;
+    height: 50px;
+    @media (max-width: 800px) {
+        width: 100%;
+
+      }
+}
+h6{
+    color: white;
+    cursor: pointer;
+    @media (max-width: 800px) {
+        width: 100%;
+
+      }
+}
+h2,h3,h5,h6{
+  font-size: large;
+}

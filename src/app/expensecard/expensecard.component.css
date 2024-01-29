@@ -1,0 +1,26 @@
+.h{
+    text-align: center;
+}
+.btn{
+    padding: 2% 5%;
+    margin-left: 40%;
+}
+.DD{
+    margin-left: 10%;
+    @media(max-width:1200px) {
+       
+    }
+}
+.im{
+    width: 60%;
+    height: 60%;
+    @media(max-width:1200px) {
+    margin-left: 20%;
+    }
+}
+.c{
+    padding: 1% 2%;
+    background-color: aliceblue;
+    margin-left: 1%;
+    border-radius: 5%;
+}

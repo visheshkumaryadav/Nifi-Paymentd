@@ -1,0 +1,66 @@
+.limg{
+    width: 60%;
+    height: 730px;
+    position: absolute;
+    @media (max-width: 1124px) {
+        display: none;
+    }
+}
+.row{
+    margin-left: 9%;
+    @media (max-width: 1124px) {
+        height: 90%;
+        width: 90%;
+         }
+}
+.qrcode{
+    width: 60%;
+    margin-top: 4%;
+    margin-left: 22%;
+    padding: 5% 8%;
+}
+h6{
+    position: relative;
+    @media (max-width: 324px) {
+        display: flex;
+    }
+}
+ngx-qrcode{ 
+    text-align: center;
+}
+small{
+    position: relative;
+    margin-left: 42px;
+  @media (max-width: 250px) {
+    display: flex;
+  }
+
+}
+button{
+    width: 40%;
+    margin-left: 30%;
+    font-size: medium;
+    background-color: darkblue;
+}
+.A{
+    width: 11%;
+    margin-top: 0.77%;
+    position: absolute;
+    @media (max-width: 1124px) {
+        width: 27%;
+        margin-top: 12px;
+      } 
+}
+.B{
+    width: 11%;
+    margin-left: 14%;
+   margin-top: -0.90%;
+    position: absolute;
+    @media (max-width: 1124px) {
+        margin-top: -12px;
+        margin-left: 37%;
+        width: 27%;
+        
+      }
+       
+}

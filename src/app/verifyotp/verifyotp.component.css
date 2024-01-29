@@ -1,0 +1,34 @@
+.limg{
+    width: 59.25%;
+    height: 627px;
+    position: absolute;
+    @media (max-width: 1124px) {
+        display: none;
+    }
+}
+.row{
+    margin-left: 9%;
+    @media (max-width: 1124px) {
+        height: 90%;
+        width: 90%;
+         }
+}
+button{
+    width: 40%;
+    height: 41px;
+    margin-left: 35%;
+    font-size: medium;
+    background-color: darkblue;
+}
+.otp-input{
+    display: flex;
+    width: 370px;
+    height: 50px;
+    @media (max-width: 1124px) {
+       height: 100%;
+        width: 80%;    
+      }
+}
+input{
+    margin-left: 3px;
+}
